@@ -1,0 +1,19 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+*.env
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment files (keep .env.example, ignore actual .env)
+.env
+*.env.local
+
+# OS
+.DS_Store
+Thumbs.db
