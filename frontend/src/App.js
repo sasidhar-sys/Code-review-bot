@@ -4,7 +4,7 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Play, Sparkles, CheckCircle2, AlertTriangle, Shield, Zap, Palette, Github } from "lucide-react";
 import "./App.css";
 
-const API = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 const LANGUAGES = [
   "auto","python","javascript","typescript","java","c","cpp",

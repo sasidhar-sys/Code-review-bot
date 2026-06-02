@@ -13,6 +13,8 @@ frontend/.vite/
 # Environment files (keep .env.example, ignore actual .env)
 .env
 *.env.local
+!.env.example
+!frontend/.env.example
 
 # OS
 .DS_Store
