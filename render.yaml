@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: code-review-bot-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    plan: free
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false   # You will enter this manually in the Render dashboard
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GITHUB_WEBHOOK_SECRET
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.11.0
