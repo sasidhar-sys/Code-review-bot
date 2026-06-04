@@ -8,7 +8,7 @@ load_dotenv()
 
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 
-MODELS = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-2.0-flash-exp']
+MODELS = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-3.5-flash', 'gemini-2.5-pro']
 MAX_RETRIES = 3
 
 def review_code(code: str, language: str, context: str) -> dict:
